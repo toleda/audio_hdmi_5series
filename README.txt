@@ -40,7 +40,6 @@ Guides:
 1b. Patches 
     5s1. AMI-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
     5s2. Award-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
-1c. Troubleshooting/AMI/Post to http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
 
 Troubleshooting/Post
 1. http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html

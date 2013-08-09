@@ -41,13 +41,10 @@ Guides:
     5s1. AMI-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
     5s2. Award-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
 1c. Troubleshooting/AMI/Post to http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
-1d. Troubleshooting/Award/Post to http://www.tonymacx86.com/hdmi-audio/70758-mountain-lion-hdmi-audio-award-dsdt.html
 
-2. Ivy Bridge/HD4000/3rd Generation Core Processors/7 Series motherboards/AMI EFI
-github.com/toleda/audio_hdmi_hd4000
-
-3. Sandy Bridge/HD3000/2rd Generation Core Processors/6 Series motherboards
-github.com/toleda/audio_hdmi_hd3000
+Troubleshooting/Post
+1. http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
+2. http://www.insanelymac.com/forum/topic/291103-mountain-lion-hdmi-audio/
 
 toleda
 https://github.com/toleda/audio_hdmi_5series

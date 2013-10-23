@@ -2,11 +2,15 @@ audio_hdmi_5series
 ============
 OS X AMD/Nvidia HDMI Audio dsdt edits
 
-This guide enables OS X HDMI audio on Intel based 5 Series motherboards with a bootable clean install of OS X.  Supported HDMI audio graphics systems are AMD discrete graphics cards (HD5xxx and HD6xxx) and Nvidia discrete graphics cards (4xx, 5xx and 6xx).  The Optimized AppleHDA.kext supports HDMI audio and Realtek audio codecs (ALC885, ALC887, ALC888, ALC889, ALC892 and ALC898) for onboard audio.  The native ML AppleHDA.kext supports only HDMI audio when configured properly. In Mountain Lion, the Optimized AppleHDA.kext supports 1 Audio_ID for HDMI and Realtek onboard audio:
+This guide enables OS X HDMI audio on Intel based 5 Series motherboards with a bootable clean install of OS X.  Supported HDMI audio graphics systems are AMD discrete graphics cards (HD5xxx, HD6xxx and HD7xxx) and Nvidia discrete graphics cards (4xx, 5xx, 6xx and 7xx).  The Optimized AppleHDA.kext supports HDMI audio and Realtek audio codecs (ALC885, ALC887, ALC888, ALC889, ALC892 and ALC898) for onboard audio.  The native ML AppleHDA.kext supports only HDMI audio when configured properly. In Mountain Lion, the Optimized AppleHDA.kext supports 1 Audio_ID for HDMI and Realtek onboard audio:
 Audio_ID: 1 supports AMD/Nvidia HDMI and 3, 5 and 6 port ALC8xx onboard audio  
 
 Note
 1. Native ML AppleHDA.kext, use Audio_ID: 1, for HDMI audio/no onboard audio
+
+OS X versions supported
+1. Mavericks.10.9 and newer
+2. Mountain Lion/10.8.2 and newer
 
 More Information
 1. Mountain Lion: Optimized AppleHDA for Realtek ALC8xx
@@ -36,7 +40,7 @@ Installation - edited dsdt.aml to Extra
 
 Guides:
 1. Nehalem/1st Generation Core Processors/5 Series motherboards (No HD Graphics)
-1a. [Guide] ML-5_series-hdmi_audio_dsdt_edits (AMI/Award dsdt)
+1a. [Guide]-5_series-hdmi_audio_dsdt_edits_v1.1.pdf.zip
 1b. Patches 
     5s1. AMI-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
     5s2. Award-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits

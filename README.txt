@@ -38,16 +38,26 @@ Usage
 Installation - edited dsdt.aml to Extra
 1. MaciASL/File/Save As…/ACPI Machine Language Binary/Extra/dsdt.aml (add extension)
 
+Problem Reporting
+1. Motherboard/BIOS version/processor/graphics/OS and version
+2. Copy of dsdt (if edited)
+3. Copy of HDMI audio SSDT (if installed)
+4. Copy of IORegistryExplorer
+
+Troubleshooting/Post w/attachments 2-4, above
+1. Mavericks/10.9
+1a. http://www.tonymacx86.com/hdmi-audio/112469-m-hdmi-audio.html
+1b. http://www.insanelymac.com/forum/topic/292999-mavericks-applehda-hdmi-audio/
+2. Mountain Lion/10.8
+2a.http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
+2b. http://www.insanelymac.com/forum/topic/291103-mountain-lion-hdmi-audio/
+
 Guides:
 1. Nehalem/1st Generation Core Processors/5 Series motherboards (No HD Graphics)
 1a. [Guide]-5_series-hdmi_audio_dsdt_edits_v1.1.pdf.zip
 1b. Patches 
     5s1. AMI-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
     5s2. Award-BIOS-AMD-Nvidia-5_Series-A1 - AMD/Nvidia HDMI audio dsdt edits
-
-Troubleshooting/Post
-1. http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
-2. http://www.insanelymac.com/forum/topic/291103-mountain-lion-hdmi-audio/
 
 toleda
 https://github.com/toleda/audio_hdmi_5series

@@ -6,8 +6,9 @@
 # see http://www.github.com/toleda/audio_alc8xx
 #
 # 1. Remove PEGP device - if present
-# 2. Rename GFX0 devices to IGPU - Verify IOReg/GFXO@2
-# 3. Rename device P0P1 to device PEGP - Verify IOReg/P0P1@1
+# 2. Rename GFX0 devices to IGPU - Verify IOReg/GFXO@2 - if present
+# 3. Rename device P0P1 to device PEGP - Verify IOReg/P0P1@1, if different, edit patch
+# 3a. Verify P0P1@1/_ADR, 0x00010000), if different, edit patch
 # 4. Insert device GFX0 and device HDAU into device PEGP (AMD/Nvidia HDMI audio)
 # 5. Insert layout-id=1 into device HDEF 
 #

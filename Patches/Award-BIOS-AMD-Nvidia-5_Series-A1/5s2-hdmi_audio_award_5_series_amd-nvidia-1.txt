@@ -1,10 +1,14 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_5series
-# File: 5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v1.0
+# File: 5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v2.0
 # hdmi_audio_sandy_bridge_gigabyte_motherboards from tonymacx86 dsdt database
 # Adds Desktop AMD/Nvidia HDMI audio dsdt edits  (Audio ID: 1)
 #
-# Important, If Method (DTGP...) and/or Device (HDEF) is/are not present in your dsdt,
-# see http://www.github.com/toleda/audio_alc8xx
+# Important, If no HDEF, check:
+# 1. If Device (AZAL) is present in your dsdt, 
+# Find: AZAL
+# Replace All: HDEF
+# 2. If Device (HDEF) is not present in your dsdt,
+# see http://www.github.com/toleda/audio_ALCInjection
 #
 # 1. Remove PEGP device - if present
 # 2. Rename device P0P1 to device PEGP - Verify IOReg/P0P1@1 or pci-bridge@1.
@@ -33,53 +37,28 @@ Device (GFX0)\n
     Name (_SUN, One)\n
     Method (_DSM, 4, NotSerialized)\n
     {\n
-        Store (Package (0x0a)\n
+	    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+	    Return (Package()\n
             {\n
-                "@0,connector-type", \n
-                Buffer (0x04)\n
-                {\n
-                    0x00, 0x08, 0x00, 0x00\n
-                }, \n
-                "@1,connector-type", \n
-                Buffer (0x04)\n
-                {\n
-                    0x00, 0x08, 0x00, 0x00\n
-                }, \n
-                "@2,connector-type", \n
-                Buffer (0x04)\n
-                {\n
-                    0x00, 0x08, 0x00, 0x00\n
-                }, \n
-                "@3,connector-type", \n
-                Buffer (0x04)\n
-                {\n
-                    0x00, 0x08, 0x00, 0x00\n
-                }, \n
-                "hda-gfx", \n
-                Buffer (0x0A)\n
-                {\n
-                     "onboard-2" \n
-                }, \n
-            }, Local0)\n
-        DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))\n
-        Return (Local0)\n
+                "@0,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@1,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@2,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@3,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "hda-gfx", Buffer() { "onboard-2" },\n
+	    })\n
     }\n
-  }\n
+}\n
 Device (HDAU)\n
 {\n
     Name (_ADR, One)\n
     Method (_DSM, 4, NotSerialized)\n
     {\n
-        Store (Package (0x02)\n
+	    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+	    Return (Package()\n
             {\n
-                "hda-gfx", \n
-                Buffer (0x0A)\n
-                {\n
-                     "onboard-2" \n
-                }, \n
-            }, Local0)\n
-        DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))\n
-        Return (Local0)\n
+		"layout-id", Buffer() { 0x01, 0x00, 0x00, 0x00 },\n
+                "hda-gfx", Buffer() { "onboard-2" },\n
+	    })\n
     }\n
 }\n
 }\n
@@ -90,19 +69,13 @@ into device name_adr 0x001B0000 insert
 begin
     Method (_DSM, 4, NotSerialized)\n
     {\n
-        Store (Package (0x04)\n
- 	     {\n
-                "layout-id", \n
-                Buffer (0x04)\n
-                {\n
-                    0x01, 0x00, 0x00, 0x00\n
-                }, \n
-                "PinConfigurations", \n
-                Buffer (Zero) {}\n
-            }, Local0)\n
-        DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))\n
-        Return (Local0)\n
+	    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+	    Return (Package()\n
+	    {\n
+                "layout-id", Buffer() { 0x01, 0x00, 0x00, 0x00 },\n
+                "PinConfigurations", Buffer(Zero) {},\n
+	    })\n
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v1.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v2.0 dsdt edits, github.com/toleda", Debug) end

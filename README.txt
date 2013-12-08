@@ -12,13 +12,9 @@ OS X versions supported
 1. Mavericks.10.9 and newer
 2. Mountain Lion/10.8.2 and newer
 
-More Information
-1. Mountain Lion: Optimized AppleHDA for Realtek ALC8xx
-http://www.tonymacx86.com/audio/76202-mountain-lion-optimized-applehda-realtek-alc8xx.html#post472375
-2. Mountain Lion HDMI Audio - AMI DSDT
-http://www.tonymacx86.com/hdmi-audio/70762-mountain-lion-hdmi-audio-ami-dsdt.html
-3. Mountain Lion HDMI Audio - Award DSDT
-http://www.tonymacx86.com/hdmi-audio/70758-mountain-lion-hdmi-audio-award-dsdt.html
+Location.aml - dsdt.aml installation folder
+1. Chameleon/Chimera - Extra/
+2. Clover - EFI/Clover/ACPI/Patched/
 
 ML 5 Series HDMI Audio dsdt edits
 1. MaciASL - http://sourceforge.net/projects/maciasl/?source=navbar
@@ -36,15 +32,14 @@ Usage
 7. MaciASL/File/Save As…/ACPI Machine Language Binary/dsdt.aml
 
 Installation - edited dsdt.aml to Extra
-1. MaciASL/File/Save As…/ACPI Machine Language Binary/Extra/dsdt.aml (add extension)
+1. MaciASL/File/Save As…/ACPI Machine Language Binary/Location.aml/dsdt.aml (add extension)
 
 Problem Reporting
 1. Motherboard/BIOS version/processor/graphics/OS and version
 2. Copy of dsdt (if edited)
-3. Copy of HDMI audio SSDT (if installed)
-4. Copy of IORegistryExplorer
+3. Copy of IORegistryExplorer
 
-Troubleshooting/Post w/attachments 2-4, above
+Troubleshooting/Post w/attachments 2 and 3, above
 1. Mavericks/10.9
 1a. http://www.tonymacx86.com/hdmi-audio/112469-mavericks-hdmi-audio-applehda.html
 1b. http://www.insanelymac.com/forum/topic/292999-mavericks-applehda-hdmi-audio/

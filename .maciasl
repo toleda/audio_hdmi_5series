@@ -1,2 +1,2 @@
-AMI-BIOS-AMD-Nvidia-5_Series-A1	DSDT	Patches/AMI-BIOS-AMD-Nvidia-5_Series-A1/5s1-hdmi_audio_ami_5_series_amd-nvidia-1.txt
-Award-BIOS-AMD-Nvidia-5_Series-A1	DSDT	Patches/Award-BIOS-AMD-Nvidia-5_Series-A1/5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt
+AMI-BIOS-AMD-Nvidia-5series-A1	DSDT	Patches/AMI-BIOS-AMD-Nvidia-5_Series-A1/5s1-hdmi_audio_ami_5_series_amd-nvidia-1.txt
+Award-BIOS-AMD-Nvidia-5series-A1	DSDT	Patches/Award-BIOS-AMD-Nvidia-5_Series-A1/5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt

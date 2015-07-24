@@ -1,5 +1,5 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_5series
-# File: 5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v2.0
+# File: 5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v3.0
 # hdmi_audio_sandy_bridge_gigabyte_motherboards from tonymacx86 dsdt database
 # Adds Desktop AMD/Nvidia HDMI audio dsdt edits  (Audio ID: 1)
 #
@@ -44,6 +44,8 @@ Device (GFX0)\n
                 "@1,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "@2,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "@3,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@4,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@5,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "hda-gfx", Buffer() { "onboard-2" },\n
 	    })\n
     }\n
@@ -78,4 +80,4 @@ begin
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v2.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("5s2-hdmi_audio_award_5_series_amd-nvidia-1.txt_v3.0 dsdt edits, github.com/toleda", Debug) end

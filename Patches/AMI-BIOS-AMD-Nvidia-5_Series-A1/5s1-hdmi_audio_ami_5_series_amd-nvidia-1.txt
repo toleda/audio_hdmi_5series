@@ -1,5 +1,5 @@
 # Maintained by: toleda for: github.com/toleda_hdmi_5series
-# File: 5s1-hdmi_audio_ami_5_series_amd-nvidia-1.txt_v2.0
+# File: 5s1-hdmi_audio_ami_5_series_amd-nvidia-1.txt_v3.0
 # Adds Desktop AMD/Nvidia HDMI audio dsdt edits  (Audio ID: 1)
 #
 # Important, If no HDEF, check:
@@ -44,6 +44,8 @@ Device (GFX0)\n
                 "@1,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "@2,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "@3,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@4,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
+                "@5,connector-type", Buffer() { 0x00, 0x08, 0x00, 0x00 },\n
                 "hda-gfx", Buffer() { "onboard-2" },\n
 	    })\n
     }\n
@@ -77,6 +79,6 @@ begin
     }\n
 end;
 into definitionblock code_regex . insert
-begin Store ("5s1-hdmi_audio_ami_5_series_amd-nvidia-1.txt_v2.0 dsdt edits, github.com/toleda", Debug) end
+begin Store ("5s1-hdmi_audio_ami_5_series_amd-nvidia-1.txt_v3.0 dsdt edits, github.com/toleda", Debug) end
 
 
